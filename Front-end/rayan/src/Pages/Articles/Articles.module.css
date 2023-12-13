@@ -1,0 +1,24 @@
+.mainPage{
+    /* border:1px solid red; */
+width: 90vw;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+
+
+.cardsPage{
+    /* border:1px solid red; */
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:3em;
+    padding:0  auto;
+ 
+}
+
+.articlesTitle{
+    font-size: 4em;
+}
+
