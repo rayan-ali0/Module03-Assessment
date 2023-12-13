@@ -72,6 +72,8 @@ const updateProfile=async(req,res)=>{
     if(res){
       console.log('Profile Updated')
       setOpen(false)
+      onDelete()
+
     }
   }
   catch(error){
@@ -175,10 +177,10 @@ Edit Article
      </Button>
      Update Photo
         </label>
-<TextField id="title" label="Title" variant="outlined"  type="text" value={article.title}                 readOnly={false}/>
-<TextField id="category" label="Category" variant="outlined"  type="text" value={article.category}                 readOnly={false}/>
-<TextField id="author" label="Author" variant="outlined"  type="text" value={article.author}                 readOnly={false}/>
-<TextField id="body" label="Body" multiline variant="outlined" fullWidth row={40} maxRows={7} type="text" value={article.body}                 readOnly={false}/>
+<TextField id="title" label="Title" variant="outlined"  type="text" defaultValue={article.title}                 readOnly={false}/>
+<TextField id="category" label="Category" variant="outlined"  type="text" defaultValue={article.category}                 readOnly={false}/>
+<TextField id="author" label="Author" variant="outlined"  type="text" defaultValue={article.author}                 readOnly={false}/>
+<TextField id="body" label="Body" multiline variant="outlined" fullWidth row={40} maxRows={7} type="text" defaultValue={article.body}                 readOnly={false}/>
 
       </Box>
       <Button variant="contained" onClick={updateProfile}>Update Profile</Button>
